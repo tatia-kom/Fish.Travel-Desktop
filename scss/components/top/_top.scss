@@ -1,0 +1,134 @@
+@import "layout/var";
+
+.top {
+  padding: em(48) 0 em(54);
+  overflow-x: hidden;
+
+  &__back-with-filter {
+    display: flex;
+    align-items: center;
+
+    .top__back {
+      margin-bottom: 0;
+    }
+  }
+
+  &__customize {
+    color: $light-grey;
+    font-size: em(14);
+    line-height: em(24,14);
+    position: relative;
+    margin-right: em(15,14);
+    padding-left: em(32,14);
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: em(24,14);
+      height: em(24,14);
+      background: url('../img/customize.svg') no-repeat center;
+    }
+  }
+
+  &__back {
+    color: $light-grey;
+    font-size: em(16);
+    line-height: em(24,16);
+    position: relative;
+    padding-left: em(32);
+    display: block;
+    margin: 0 0 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: em(24,16);
+      height: em(24,16);
+      background: url('../img/back.svg') no-repeat center;
+    }
+  }
+
+  &__button {
+    font-size: em(12);
+    font-weight: bold;
+    padding: 0 em(25,12);
+    width: auto;
+    height: em(24,12);
+    margin-right: em(16,12);
+  }
+
+  &__title {
+    font-size: em(40);
+    font-family: $top-title-font;
+    color: $main-grey;
+    margin: em(17,40) 0 0;
+  }
+
+  &__subtitle {
+    font-size: em(18);
+    font-family: $main-font;
+    font-weight: $bold;
+    color: $main-grey;
+    margin: 0 em(15,18);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    font-family: $main-font;
+    color: $main-grey;
+    margin: em(49, 14) em(15,14) 0;
+  }
+
+
+
+  &__steps {
+    margin-right: em(8,16);
+    margin-left: em(139,16);
+    font-size: em(16);
+    color: $light-grey;
+    display: flex;
+    align-items: center;
+  }
+
+  &__step {
+    font-size: em(12,16);
+    display: block;
+    width: em(24,12);
+    height: em(24,12);
+    border-radius: 50%;
+    border: 1px solid $border-grey;
+    margin-left: em(8,12);
+    line-height: em(24,12);
+    text-align: center;
+    font-weight: bold;
+
+    &--current {
+      color: black;
+      border: 2px solid black;
+      line-height: em(22,12);
+    }
+
+    &--done {
+      color: white;
+      background: #4db67d;
+      border: 2px solid #4db67d;
+      line-height: em(22,12);
+    }
+  }
+
+
+
+
+  &__date {
+    font-size: em(16);
+    color: #8a8a8a;
+    margin-top: em(9);
+  }
+}

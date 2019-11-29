@@ -1,0 +1,38 @@
+@import "layout/var";
+
+.faq {
+
+  &__title {
+    font-size: em(30);
+    margin-top: em(62,30);
+    margin-bottom: em(20,30);
+    font-family: $top-title-font;
+    color: $main-grey;
+  }
+
+  &__slider {
+
+  }
+
+  &__slide {
+    padding-right: em(32);
+    padding-top: em(32);
+    outline: none;
+  }
+
+  &__question {
+    font-size: em(18);
+    font-weight: $bold;
+  }
+
+  &__answer {
+    margin-top: em(24);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    margin-bottom: em(26,14);
+    color: #8a8a8a;
+  }
+}

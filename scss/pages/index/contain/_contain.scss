@@ -1,0 +1,61 @@
+@import "layout/var";
+
+.contain {
+
+  &__title {
+    font-size: em(30);
+    margin-top: em(15,30);
+    margin-bottom: em(44,30);
+    font-family: $top-title-font;
+    color: $main-grey;
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: em(32);
+    width: 15%;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: em(18);
+    font-family: $main-font;
+    font-weight: bold;
+    color: $main-grey;
+    margin-top: em(16,18);
+  }
+
+  &__list {
+    margin: em(8) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    font-size: em(16);
+    color: #8a8a8a;
+    margin-bottom: em(16,16);
+    padding-left: em(16,16);
+    position: relative;
+    line-height: em(24,16);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      width: em(4,16);
+      height: em(4,16);
+      position: absolute;
+      top: em(10,16);
+      left: 0;
+      display: block;
+      background: black;
+      border-radius: 50%;
+    }
+  }
+}

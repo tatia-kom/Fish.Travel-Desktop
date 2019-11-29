@@ -1,0 +1,54 @@
+@import "layout/var";
+
+.done {
+
+  &__top {
+    margin-bottom: em(16);
+  }
+
+  &__text {
+    margin-top: em(16);
+  }
+
+  &__link {
+    display: block;
+    color: #1673d9;
+    font-size: em(16);
+    padding-left: em(48);
+    margin-bottom: em(16);
+    line-height: em(24);
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: em(24);
+      height: em(24);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--phone {
+      &:before {
+        background-image: url('../img/phone.png');
+      }
+    }
+    &--mail {
+      &:before {
+        background-image: url('../img/mail.png');
+      }
+    }
+  }
+
+  &__button-wrap {
+    display: flex;
+    margin-top: em(48);
+
+    button {
+      margin: 0 auto;
+    }
+  }
+}

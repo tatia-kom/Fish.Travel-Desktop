@@ -1,0 +1,131 @@
+@import "layout/var";
+
+.form {
+
+  &--index {
+    background: white;
+  }
+
+  &--top {
+    margin-top: em(28);
+  }
+
+  &__title {
+    font-size: em(18);
+    font-weight: bold;
+    margin: em(36,18) 0 em(16,18);
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__item {
+    //padding: em(12) $side-padding em(16);
+    position: relative;
+    margin-bottom: em(32);
+
+    &--half {
+      width: calc(50% - 16px);
+      flex-shrink: 0;
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+
+    &--no_left_right {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--error {
+      .form__label {
+        display: flex;
+        justify-content: space-between;
+      }
+      .form__error {
+        display: block;
+        color: #e26400;
+      }
+      .form__input {
+        border-color: #e85007;
+      }
+    }
+  }
+
+  &__label {
+    color: $light-grey;
+    font-size: em(14);
+    display: block;
+    line-height: 1.43;
+    margin-bottom: em(6,14);
+  }
+
+  &__input {
+    border-radius: em(4,16);
+    font-size: em(16);
+    font-weight: $bold;
+    line-height: 1.5;
+    border: em(1,16) solid #dcdcdc;
+    display: block;
+    padding: em(7,16) em(16,16);
+    box-sizing: border-box;
+    width: 100%;
+    color: $main-grey;
+
+    &--with_icon {
+      padding-right: em(40);
+    }
+
+    &:focus {
+      border-color: #1673d9;
+    }
+  }
+
+  &__input-icon {
+    width: em(24);
+    height: em(24);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: em(10);
+    right: em(8);
+  }
+
+  &__textarea {
+    border-radius: em(4,16);
+    font-size: em(16);
+    font-weight: $bold;
+    line-height: 1.5;
+    border: em(1,16) solid #dcdcdc;
+    display: block;
+    padding: em(7,16) em(16,16);
+    box-sizing: border-box;
+    width: 100%;
+    height: em(112, 16);
+    color: $main-grey;
+    resize: none;
+  }
+
+  &__hint {
+    font-size: em(14);
+    line-height: em(20,14);
+    margin-top: em(6,14);
+    color: $light-grey;
+  }
+
+  &__button {
+    margin-top: em(4,16);
+
+    &--payment {
+      width: em(144);
+      margin-left: em(32);
+    }
+  }
+
+  &__error {
+    display: none;
+  }
+}

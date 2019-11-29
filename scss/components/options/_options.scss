@@ -1,0 +1,42 @@
+@import "layout/var";
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: block;
+    font-size: em(12);
+    font-weight: $bold;
+    color: $main-grey;
+    border: 1px solid #e2e2e2;
+    border-radius: em(12,12);
+    flex-shrink: 0;
+    padding: em(4,12) em(14,12);
+    margin-right: em(4,12);
+    margin-top: em(4,12);
+    outline: none;
+
+    &--blue {
+      color: white;
+      background: $blue;
+      border-color: $blue;
+    }
+
+    &--active {
+      color: white;
+      background-image: linear-gradient(to right, #dc85d7, #b64d4d);
+      border-color: transparent;
+    }
+
+    &--aqua {
+      color: white;
+      background: $aqua;
+      border-color: $aqua;
+    }
+
+    &--more {
+      color: $light-grey;
+    }
+  }
+}

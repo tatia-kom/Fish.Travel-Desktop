@@ -1,0 +1,27 @@
+$main-font: 'Roboto', sans-serif;
+$top-title-font: 'Roboto Slab', sans-serif;
+
+$regular: 400;
+$bold: 700;
+
+//colors
+
+$body-color: #f2f2f2;
+$blue: #005e91;
+$aqua: #00abb7;
+$green: #2b9c5f;
+$orange: #e26400;
+$purple: #422b9c;
+$main-grey: #4b4b4b;
+$light-grey: #b5b5b5;
+$back-grey: #959595;
+$border-grey: #e2e2e2;
+
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$side-padding: em(15);

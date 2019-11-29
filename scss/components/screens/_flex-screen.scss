@@ -1,0 +1,12 @@
+@import "layout/var";
+
+.flex-screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: em(32) 0;
+}

@@ -1,0 +1,73 @@
+@import "layout/var";
+
+.about {
+  position: relative;
+
+  &__title {
+    font-size: em(30);
+    margin-top: em(62,30);
+    margin-bottom: em(20,30);
+    font-family: $top-title-font;
+    color: $main-grey;
+  }
+
+  &__slider {
+
+  }
+
+  &__slide {
+    position: relative;
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    //width: em(800);
+    width: 66%;
+    height: em(424);
+    flex-shrink: 0;
+  }
+
+  &__desc {
+    width: 100%;
+    padding-left: em(34);
+    padding-top: em(30);
+  }
+
+  &__top {
+    font-size: em(24);
+    font-family: $top-title-font;
+    line-height: em(38,26);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: em(75);
+  }
+
+  &__num {
+    font-size: em(75);
+    line-height: em(75,75);
+    font-family: $top-title-font;
+    font-weight: $bold;
+    margin-right: em(22,75);
+  }
+
+  &__text {
+    font-size: em(16);
+    line-height: em(24,16);
+    color: #8a8a8a;
+    margin-top: em(32,16);
+  }
+
+
+
+
+  &__dots {
+    top: 0;
+    left: calc(66% + #{em(34)});
+  }
+}

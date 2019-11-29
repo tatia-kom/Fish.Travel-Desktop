@@ -1,0 +1,31 @@
+@import "layout/var";
+
+.header {
+  padding: em(27) 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06);
+
+  &__logo {
+    flex-shrink: 0;
+    display: flex;
+
+    img {
+      max-width: em(115);
+    }
+  }
+
+  &__logo-text {
+    font-size: em(14);
+    line-height: 1.21;
+    margin-left: em(92,14);
+    color: black;
+    width: em(256,14);
+
+    &--white {
+      color: white;
+    }
+  }
+}

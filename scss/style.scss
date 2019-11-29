@@ -1,0 +1,49 @@
+@import "layout/var";
+@import "layout/app";
+
+
+//button
+@import "components/button/button";
+//form
+@import "components/form/form";
+@import "components/form/form-index";
+//close
+@import "components/close/close";
+//screens
+@import "components/screens/flex-screen";
+//slider dots
+@import "components/slider-dots/slider-dots";
+
+
+//header
+@import "components/header/header";
+@import "components/header/header-index";
+//page top
+@import "components/top/top";
+//advantages
+@import "pages/index/advantages/advantages";
+//how it works
+@import "pages/index/how/how";
+//options
+@import "components/options/options";
+//about
+@import "pages/index/about/about";
+//contain
+@import "pages/index/contain/contain";
+//reviews
+@import "pages/index/reviews/reviews";
+//faq
+@import "pages/index/faq/faq";
+//card
+@import "components/cards/card";
+//summary
+@import "components/summary/summary";
+//footer
+@import "components/footer/footer";
+
+
+//done
+@import "components/done/done";
+
+
+

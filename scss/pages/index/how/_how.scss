@@ -1,0 +1,66 @@
+@import "layout/var";
+
+.how {
+
+  &__title {
+    font-size: em(30);
+    margin-top: em(62,30);
+    margin-bottom: em(30,30);
+    font-family: $top-title-font;
+    color: $main-grey;
+  }
+
+  &__flex {
+    display: flex;
+    position: relative;
+  }
+
+  &__item {
+    //width: em(176);
+    width: 14.5%;
+    flex-shrink: 0;
+    margin-right: em(32);
+
+    &:last-child {
+      margin-right: 0;
+
+      .how__num {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__num {
+    color: #d6d6d6;
+    font-size: em(31);
+    font-weight: $bold;
+    font-family: $top-title-font;
+    line-height: em(40,31);
+    display: block;
+    position: relative;
+
+    &:after {
+      content: '';
+      //width: em(137,31);
+      width: 77%;
+      height: 1px;
+      background: #eee;
+      position: absolute;
+      display: block;
+      right: 0;
+      top: em(20,31);
+    }
+  }
+
+  &__image {
+    margin-top: em(4);
+  }
+
+  &__text {
+    font-size: em(16);
+    line-height: em(24,16);
+    color: #8a8a8a;
+  }
+}

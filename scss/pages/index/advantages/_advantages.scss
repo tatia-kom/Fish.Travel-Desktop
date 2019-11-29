@@ -1,0 +1,51 @@
+@import "layout/var";
+
+.advantages {
+
+  &__title {
+    font-size: em(30);
+    margin-top: em(62,30);
+    margin-bottom: em(19,30);
+    font-family: $top-title-font;
+    color: $main-grey;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: em(19);
+  }
+
+  &__item {
+    width: calc(50% - #{em(16)});
+    flex-shrink: 0;
+    margin-bottom: em(54);
+  }
+
+  &__image {
+    width: em(64);
+    height: em(64);
+    display: flex;
+
+    img {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+  &__name {
+    font-size: em(18);
+    font-family: $main-font;
+    font-weight: bold;
+    color: $main-grey;
+    margin-top: em(16,18);
+  }
+
+  &__text {
+    font-size: em(16);
+    line-height: em(24,16);
+    margin-top: em(8,16);
+    color: #8a8a8a;
+  }
+}

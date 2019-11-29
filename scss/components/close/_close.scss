@@ -1,0 +1,12 @@
+@import "layout/var";
+
+.close {
+  width: em(32);
+  height: em(32);
+  position: absolute;
+  top: em(32);
+  right: em(32);
+  background: url('../img/x.svg') no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}

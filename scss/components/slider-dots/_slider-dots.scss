@@ -1,0 +1,38 @@
+@import "layout/var";
+
+.slider-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex!important;
+
+  li {
+    width: em(6);
+    height: em(6);
+    background: rgba(0, 0, 0, 0.14);
+    border-radius: 50%;
+    border: em(3) solid #fbfbfb;
+    margin: 0 em(2);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    button {
+      font-size: 0;
+      color: transparent;
+      width: 0;
+      height: 0;
+      border: 0;
+      padding: 0;
+    }
+
+    &.slick-active {
+      background: transparent;
+      border-color: black;
+    }
+  }
+}

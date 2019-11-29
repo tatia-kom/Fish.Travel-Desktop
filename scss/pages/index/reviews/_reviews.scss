@@ -1,0 +1,119 @@
+@import "layout/var";
+
+.reviews {
+
+  &__title {
+    font-size: em(30);
+    margin-top: em(62,30);
+    margin-bottom: em(20,30);
+    font-family: $top-title-font;
+    color: $main-grey;
+  }
+
+  &__slider {
+
+  }
+
+  &__slide {
+    padding-right: em(34);
+    padding-top: em(36);
+  }
+
+  &__date {
+    font-size: em(14);
+    line-height: 1.14;
+    color: $back-grey;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    margin-top: em(22);
+  }
+
+  &__ava {
+    width: em(56);
+    height: em(56);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__description {
+    margin-left: em(18);
+  }
+
+  &__text {
+    font-size: em(14);
+    line-height: 1.43;
+    margin: 0;
+  }
+
+  &__name {
+    font-weight: $bold;
+  }
+
+  &__for {
+    font-weight: $bold;
+    color: #1673d9;
+  }
+
+  &__content {
+    margin: em(24,16) 0;
+    color: #8a8a8a;
+    font-size: em(16);
+    line-height: em(24,16);
+  }
+
+  &__link {
+    color: $light-grey;
+    font-size: em(14);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+
+  &__stars {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: $main-grey;
+      font-size: em(14);
+      font-weight: bold;
+      margin-left: em(8,14);
+    }
+
+    &--big {
+      margin-top: 0;
+      margin-left: em(16);
+
+      span {
+        font-size: em(16);
+        font-weight: $bold;
+        margin-left: em(16,16);
+      }
+    }
+  }
+
+  &__stars-title {
+    font-weight: bold;
+    color: $main-grey;
+  }
+
+  &__star {
+    margin-right: 3px;
+
+    path {
+      opacity: 0.2;
+    }
+
+    &--full {
+      path {
+        opacity: 1;
+      }
+    }
+  }
+}

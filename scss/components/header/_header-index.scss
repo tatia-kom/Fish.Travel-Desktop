@@ -1,0 +1,41 @@
+@import "layout/var";
+
+.header-index {
+  background: url('../img/bg-main.png') center;
+  background-size: cover;
+  width: 100%;
+  height: em(515);
+  box-shadow: none;
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: em(32);
+    padding-bottom: em(56);
+  }
+
+  &__logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__logo-text {
+    width: em(256,14);
+    margin: em(18) 0 0 0;
+  }
+
+  &__title {
+    color: white;
+    font-size: em(40);
+    font-weight: $bold;
+    font-family: $top-title-font;
+    line-height: 1.17;
+    margin-bottom: em(32,40);
+  }
+
+  .container {
+    height: 100%;
+  }
+}
