@@ -1,7 +1,6 @@
 @import "layout/var";
 
 .button {
-  border: 1px solid transparent;
   box-shadow: 0 8px 9px 0 rgba(11, 144, 217, 0.3);
   background-image: linear-gradient(to right, #5dc2d0, #1673d9);
   color: white;
@@ -17,6 +16,6 @@
   &:hover {
     color: #1673d9;
     background: transparent;
-    border-color: rgba(22, 115, 217, 0.3);
+    border: 1px solid rgba(22, 115, 217, 0.3);
   }
 }
