@@ -1,0 +1,107 @@
+@import "layout/var";
+
+.sale {
+  padding-top: em(16);
+
+  &__title {
+    font-size: em(22);
+    font-weight: bold;
+    color: $main-grey;
+    text-align: center;
+    margin-bottom: em(16,22);
+  }
+
+  &__block {
+    border-radius: 8px;
+    border: solid 1px #f0f0f0;
+    margin-bottom: em(24);
+    padding: em(24);
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-top: em(17);
+    }
+  }
+
+  &__num {
+    border: solid 1px #1673d9;
+    border-radius: 4px;
+    font-size: 28px;
+    font-family: $top-title-font;
+    font-weight: bold;
+    color: #1673d9;
+    padding: 0 em(8,28) 0 em(29,28);
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 2px;
+      background: #1673d9;
+      position: absolute;
+      top: 17px;
+      left: 8px;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 2px;
+      background: #1673d9;
+      position: absolute;
+      top: 17px;
+      left: 8px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1673d9;
+    margin-left: em(16,14);
+  }
+
+  &__details {
+    color: $light-grey;
+    font-size: em(14);
+    text-decoration: underline;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__price {
+    color: $main-grey;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: $top-title-font;
+    width: em(95,28);
+    flex-shrink: 0;
+  }
+
+  &__old-price {
+    color: #9d9d9d;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $top-title-font;
+    text-decoration: line-through;
+  }
+
+  &__button {
+    margin-left: auto;
+    font-size: em(12);
+    width: em(80,12);
+    height: em(24,12);
+  }
+}
