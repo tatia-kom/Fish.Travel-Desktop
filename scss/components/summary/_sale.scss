@@ -12,7 +12,7 @@
   }
 
   &__block {
-    border-radius: 8px;
+    border-radius: em(8px);
     border: solid 1px #f0f0f0;
     margin-bottom: em(24);
     padding: em(24);
@@ -29,8 +29,8 @@
 
   &__num {
     border: solid 1px #1673d9;
-    border-radius: 4px;
-    font-size: 28px;
+    border-radius: em(4,28);
+    font-size: em(28);
     font-family: $top-title-font;
     font-weight: bold;
     color: #1673d9;
@@ -63,7 +63,7 @@
   }
 
   &__name {
-    font-size: 14px;
+    font-size: em(14);
     font-weight: bold;
     color: #1673d9;
     margin-left: em(16,14);
@@ -83,7 +83,7 @@
 
   &__price {
     color: $main-grey;
-    font-size: 28px;
+    font-size: em(28);
     font-weight: bold;
     font-family: $top-title-font;
     width: em(95,28);
@@ -92,7 +92,7 @@
 
   &__old-price {
     color: #9d9d9d;
-    font-size: 20px;
+    font-size: em(20);
     font-weight: bold;
     font-family: $top-title-font;
     text-decoration: line-through;
